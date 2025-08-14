@@ -8,16 +8,17 @@ export default function AnimatePage({ children }: { children: ReactNode }) {
   const pathname = usePathname()
 
   return (
-    <AnimatePresence mode="wait">
-      <motion.div
+    <AnimatePresence mode="wait" initial={false}>
+      <motion.main
         key={pathname}
         initial={{ opacity: 0, y: 15 }}
         animate={{ opacity: 1, y: 0 }}
-        exit={{ opacity: 0, y: -15 }}
+        // exit={{ opacity: 0, y: -15 }}
         transition={{ duration: 0.4, ease: 'easeInOut' }}
+        className='p-10 flex justify-center'
       >
         {children}
-      </motion.div>
+      </motion.main>
     </AnimatePresence>
   )
 }

@@ -1,11 +1,11 @@
+import Image from 'next/image'
+
 export default function AboutPage() {
-    return (
-      <div>
-        <h1 className="text-3xl font-bold mb-4">About</h1>
-        <p>
-          This site is designed using a minimalist black-and-white aesthetic,
-          with a spiky edge that reflects bold design principles.
-        </p>
-      </div>
-    )
-  }
+  return (
+    <div>
+      <Image src="/images/stock.jpg" alt="Archive 1" width={600} height={300} />
+      Lorem ipsum dolor sit <span className="text-xl font-bold ">amet</span>, consectetur adipiscing elit.
+
+    </div>
+  )
+}
