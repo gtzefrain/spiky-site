@@ -15,7 +15,7 @@ export default function SpikyHeader() {
   return (
     <header className="sticky top-0 z-50 bg-zinc-700 border-b border-white">
       <nav className="flex justify-between items-center p-4 max-w-5xl mx-auto">
-        <div className="text-2xl font-bold tracking-widest text-white"><a href="/"> SPIKY</a></div>
+        <div className="text-2xl font-bold tracking-widest text-white"><Link  href="/"> SPIKY</Link></div>
         <ul className="flex space-x-6">
           <li><Link className={`${linkClass('/about')} text-white`} href="/about">About</Link></li>
           <li><Link className={`${linkClass('/archive')} text-white`} href="/archive">Archive</Link></li>
